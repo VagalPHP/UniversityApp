@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/Foto"
+        android:layout_width="143dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/nomeCS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/nomeCS"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ingressoCS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Foto"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <EditText
+        android:id="@+id/nascimentoCS"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="DD-MM-AAAA"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ingressoCS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeCS"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/ingressoCS"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Ano de ingresso"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeCS" />
+
+    <Button
+        android:id="@+id/cadNewStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingressoCS"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_TakePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/Foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Foto"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</android.support.constraint.ConstraintLayout>
